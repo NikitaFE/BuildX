@@ -47,7 +47,6 @@ gulp.task('images', function () {
     .pipe(gulp.dest('build/img'));
 });
 
-
 gulp.task('webp', function () {
   return gulp.src('source/img/**/*.{png,jpg}')
   .pipe(webp({quality: 80}))

@@ -1,0 +1,60 @@
+.feature {
+  position: relative;
+
+  padding: 10px 0;
+  padding-left: 50px;
+
+  &:nth-child(1) {
+    &::before {
+      background-image: url(../img/slider-icon-1.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 36px auto;
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      background-image: url(../img/slider-icon-2.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 33px auto;
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      background-image: url(../img/slider-icon-3.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 34px auto;
+    }
+  }
+
+  &::before {
+    @include pseudo;
+
+    top: 20px;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.feature__title {
+  @include montserrat-black(18px, 30px, $text-black);
+
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.feature__text {
+  @include roboto-regular(14px, 24px, $text-darkgray);
+
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}

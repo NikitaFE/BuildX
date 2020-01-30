@@ -3,38 +3,46 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BuildX</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
   <header class="header">
     <div class="header__main">
-      <div class="header__top">
-        <a href="" class="header__logo">
-          <img src="img/logo.png" width="123" height="43" alt="Logo of the company">
-        </a>
-        <button class="header__button" type="button"><span class="visually-hidden">Open/Close menu</span></button>
+      <div class="header__top-container container">
+        <div class="header__top">
+          <a href="" class="header__logo">
+            <img src="img/logo.png" width="123" height="43" alt="Logo of the company">
+          </a>
+          <button class="header__button button" type="button">
+            <span class="visually-hidden">Open/Close menu</span>
+            <span class="header__burger"></span>
+          </button>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li><a href="" class="nav__link">About</a></li>
+            <li><a href="" class="nav__link">Features</a></li>
+            <li><a href="" class="nav__link">Project</a></li>
+            <li><a href="" class="nav__link">Pages</a></li>
+            <li><a href="" class="nav__link">Contact</a></li>
+            <li><a href="" class="nav__link">Search</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li><a href="" class="nav__link">About</a></li>
-          <li><a href="" class="nav__link">Features</a></li>
-          <li><a href="" class="nav__link">Project</a></li>
-          <li><a href="" class="nav__link">Pages</a></li>
-          <li><a href="" class="nav__link">Contact</a></li>
-          <li><a href="" class="nav__link">Search</a></li>
-        </ul>
-      </nav>
     </div>
     <div class="header__contacts">
-      <p class="header__contacts-text">Have any question?</p>
-      <ul class="header__contacts-info">
-        <li><a href="mailto:contact@mail.com" class="header__contact">contact@mail.com</a></li>
-        <li><a href="tel:+0800444333444" class="header__contact">+080 0444 333 444</a></li>
-      </ul>
+      <div class="header__contacts-container container">
+        <p class="header__contacts-text">Have any question?</p>
+        <ul class="header__contacts-info">
+          <li><a href="mailto:contact@mail.com" class="header__contact">contact@mail.com</a></li>
+          <li><a href="tel:+0800444333444" class="header__contact">+080 0444 333 444</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -45,75 +53,79 @@
       <h2 class="visually-hidden">Our promo</h2>
 
       <div class="promo__main">
-        <p class="promo__title">We Do Big Things With Big Ideas</p>
-        <p class="promo__subtitle">Talk To Our Experts and Get Your Dream Home Done. If you dream of designing a new home
-          that takes full advantage of the unique geography and views of land that you love</p>
-        <a href="" class="promo__button">Explore Now</a>
+        <div class="promo__main-container container">
+          <p class="promo__title">We Do Big Things With Big Ideas</p>
+          <p class="promo__subtitle">Talk To Our Experts and Get Your Dream Home Done. If you dream of designing a new home
+            that takes full advantage of the unique geography and views of land that you love</p>
+          <a href="" class="promo__button button button--orange">Explore Now</a>
+        </div>
       </div>
       <div class="promo__bottom">
-        <p class="promo__text">Consulting And Estimate For Your Project, <a href="" class="promo__link">Contact Us
-            Today</a></p>
-        <a href="" class="promo__bottom-button">Get a Quote</a>
+        <div class="promo__bottom-container container">
+          <p class="promo__text">Consulting And Estimate For Your Project, <a href="" class="promo__link">Contact Us
+              Today</a></p>
+          <a href="" class="promo__bottom-button button button--white">Get a Quote</a>
+        </div>
       </div>
     </section>
 
     <section class="services">
-      <h2 class="services__title">Our services</h2>
+      <div class="services__container container">
+        <h2 class="services__title section-title">Our services</h2>
 
-      <p class="services__text">Lorem ipsum dolor sit amet, sed dicunt oporteat cu, laboramus definiebas cum et. Duo id
-        omnis persequeris neglegentur, facete commodo ea usu, possit lucilius sed ei. Esse efficiendi scripserit eos ex.
-        Sea utamur iisque salutatus id.Mel autem animal.</p>
-
-
-      <ul class="services__cadrs">
-        <li class="services__cadrs-item service-card">
-          <div class="service-card__image"><img src="https:/placehold.it/360x236" width="360" height="236" alt=""></div>
-          <h3 class="service-card__title">Renovations</h3>
-          <p class="service-card__text">
-            Lorem ipsum dolor sit amet, sed dicunt oporteat cuum Tuo iomnis persequeris neglegentur, facete commodo ea use possit lucilius.
-          </p>
-          <a href="" class="service-card__link">Read more</a>
-        </li>
-        <li class="services__cadrs-item service-card">
-          <div class="service-card__image"><img src="https:/placehold.it/360x236" width="360" height="236" alt=""></div>
-          <h3 class="service-card__title">Consulting</h3>
-          <p class="service-card__text">
-            Lorem ipsum dolor sit amet, sed dicunt oporteat cuum Tuo iomnis persequeris neglegentur, facete commodo ea use possit lucilius.
-          </p>
-          <a href="" class="service-card__link">Read more</a>
-        </li>
-        <li class="services__cadrs-item service-card">
-          <div class="service-card__image"><img src="https:/placehold.it/360x236" width="360" height="236" alt=""></div>
-          <h3 class="service-card__title">Smart houses</h3>
-          <p class="service-card__text">
-            Lorem ipsum dolor sit amet, sed dicunt oporteat cuum Tuo iomnis persequeris neglegentur, facete commodo ea use possit lucilius.
-          </p>
-          <a href="" class="service-card__link">Read more</a>
-        </li>
-      </ul>
+        <p class="services__text">Lorem ipsum dolor sit amet, sed dicunt oporteat cu, laboramus definiebas cum et. Duo id
+          omnis persequeris neglegentur, facete commodo ea usu, possit lucilius sed ei. Esse efficiendi scripserit eos ex.
+          Sea utamur iisque salutatus id.Mel autem animal.</p>
+        <ul class="services__cadrs">
+          <li class="services__cadrs-item service-card">
+            <div class="service-card__image"><img src="img/service-1.jpg" width="360" height="236" alt=""></div>
+            <h3 class="service-card__title">Renovations</h3>
+            <p class="service-card__text">
+              Lorem ipsum dolor sit amet, sed dicunt oporteat cuum Tuo iomnis persequeris neglegentur, facete commodo ea use possit lucilius.
+            </p>
+            <a href="" class="service-card__link">Read more</a>
+          </li>
+          <li class="services__cadrs-item service-card">
+            <div class="service-card__image"><img src="img/service-2.jpg" width="360" height="236" alt=""></div>
+            <h3 class="service-card__title">Consulting</h3>
+            <p class="service-card__text">
+              Lorem ipsum dolor sit amet, sed dicunt oporteat cuum Tuo iomnis persequeris neglegentur, facete commodo ea use possit lucilius.
+            </p>
+            <a href="" class="service-card__link">Read more</a>
+          </li>
+          <li class="services__cadrs-item service-card">
+            <div class="service-card__image"><img src="img/service-3.jpg" width="360" height="236" alt=""></div>
+            <h3 class="service-card__title">Smart houses</h3>
+            <p class="service-card__text">
+              Lorem ipsum dolor sit amet, sed dicunt oporteat cuum Tuo iomnis persequeris neglegentur, facete commodo ea use possit lucilius.
+            </p>
+            <a href="" class="service-card__link">Read more</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="features">
       <h2 class="visually-hidden">Our features</h2>
 
       <div class="features__slides">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <button class="features__button"></button>
+        <img class="features__slide" src="img/slide-1.jpg" alt="">
+        <img class="features__slide features__slide--hidden" src="img/slide-2.jpg" alt="">
+        <img class="features__slide features__slide--hidden" src="img/slide-3.jpg" alt="">
+        <button class="features__button button"></button>
       </div>
       <div class="features__info">
         <ul class="features__list">
           <li class="features__item feature">
-            <h3 class="feature__title">GENERAL BUILDER</h3>
+            <h3 class="feature__title">General builder</h3>
             <p class="feature__text">Lorem ipsum dolor sit amet, sed dicunt oporteat cuum Tuo iomnis persequeris neglegentur, facete commodo ea use possit lucilius.</p>
           </li>
           <li class="features__item feature">
-            <h3 class="feature__title">HOUSE EXTENSIONS</h3>
+            <h3 class="feature__title">House extensions</h3>
             <p class="feature__text">Lorem ipsum dolor sit amet, sed dicunt oporteat cuum Tuo iomnis persequeris neglegentur, facete commodo ea use possit lucilius.</p>
           </li>
           <li class="features__item feature">
-            <h3 class="feature__title">REFURBISHMENT</h3>
+            <h3 class="feature__title">Refurbishment</h3>
             <p class="feature__text">Lorem ipsum dolor sit amet, sed dicunt oporteat cuum Tuo iomnis persequeris neglegentur, facete commodo ea use possit lucilius.</p>
           </li>
         </ul>
@@ -137,7 +149,7 @@
       </nav>
       <ul class="works__gallery">
         <li>
-          <img src="" alt="">
+          <img src="img/gallery-1.jpg" alt="">
           <div class="work__info">
             <h3 class="work__title">ARCHITECTURE AND DESIGN</h3>
             <ul class="work__buttons">
@@ -147,7 +159,7 @@
           </div>
         </li>
         <li>
-          <img src="" alt="">
+          <img src="img/gallery-2.jpg" alt="">
           <div class="work__info">
             <h3 class="work__title">ARCHITECTURE AND DESIGN</h3>
             <ul class="work__buttons">
@@ -157,7 +169,7 @@
           </div>
         </li>
         <li>
-          <img src="" alt="">
+          <img src="img/gallery-3.jpg" alt="">
           <div class="work__info">
             <h3 class="work__title">ARCHITECTURE AND DESIGN</h3>
             <ul class="work__buttons">
@@ -167,7 +179,7 @@
           </div>
         </li>
         <li>
-          <img src="" alt="">
+          <img src="img/gallery-4.jpg" alt="">
           <div class="work__info">
             <h3 class="work__title">ARCHITECTURE AND DESIGN</h3>
             <ul class="work__buttons">
@@ -177,7 +189,7 @@
           </div>
         </li>
         <li>
-          <img src="" alt="">
+          <img src="img/gallery-5.jpg" alt="">
           <div class="work__info">
             <h3 class="work__title">ARCHITECTURE AND DESIGN</h3>
             <ul class="work__buttons">
@@ -187,7 +199,7 @@
           </div>
         </li>
         <li>
-          <img src="" alt="">
+          <img src="img/gallery-6.jpg" alt="">
           <div class="work__info">
             <h3 class="work__title">ARCHITECTURE AND DESIGN</h3>
             <ul class="work__buttons">
@@ -206,21 +218,21 @@
       <div class="feedback__carusel">
         <ul class="feedback__items">
           <li class="feedback__item feedback-item">
-            <div class="feedback-item__photo"><img src="https:/placehold.it/136x171" width="136" height="171" alt=""></div>
+            <div class="feedback-item__photo"><img src="img/costomer-1.jpg" width="136" height="171" alt=""></div>
             <p class="feedback-item__text">
               I've been happy with the services provided by Construction LLC. Scooter Libby has been wonderful! He has returned my calls quickly, and he answered all my questions.
             </p>
             <span class="feedback-item__author">HouseBuilders - CEO</span>
           </li>
           <li class="feedback__item feedback-item">
-            <div class="feedback-item__photo"><img src="https:/placehold.it/136x171" width="136" height="171" alt=""></div>
+            <div class="feedback-item__photo"><img src="img/costomer-2.jpg" width="136" height="171" alt=""></div>
             <p class="feedback-item__text">
               I've been happy with the services provided by Construction LLC. Scooter Libby has been wonderful! He has returned my calls quickly, and he answered all my questions.
             </p>
             <span class="feedback-item__author">HouseBuilders - CEO</span>
           </li>
           <li class="feedback__item feedback-item">
-            <div class="feedback-item__photo"><img src="https:/placehold.it/136x171" width="136" height="171" alt=""></div>
+            <div class="feedback-item__photo"><img src="img/costomer-1.jpg" width="136" height="171" alt=""></div>
             <p class="feedback-item__text">
               I've been happy with the services provided by Construction LLC. Scooter Libby has been wonderful! He has returned my calls quickly, and he answered all my questions.
             </p>
@@ -288,7 +300,7 @@
       <ul class="news__list">
         <li>
           <article class="news__item news-item">
-            <div class="news-item__image"><img src="" alt=""></div>
+            <div class="news-item__image"><img src="img/news-1.jpg" alt=""></div>
             <div class="news-item__info">
               <h3 class="news-item__title">Construction Forklift Buyers Guide</h3>
               <time class="news-item__date" datetime="2018-12-12 18:00">12 december 2018</time>
@@ -301,7 +313,7 @@
         </li>
         <li>
           <article class="news__item news-item">
-            <div class="news-item__image"><img src="" alt=""></div>
+            <div class="news-item__image"><img src="img/news-2.jpg" alt=""></div>
             <div class="news-item__info">
               <h3 class="news-item__title">How to plan for your dream house?</h3>
               <time class="news-item__date" datetime="2018-12-12 18:00">12 december 2018</time>
@@ -314,7 +326,7 @@
         </li>
         <li>
           <article class="news__item news-item">
-            <div class="news-item__image"><img src="" alt=""></div>
+            <div class="news-item__image"><img src="img/news-3.jpg" alt=""></div>
             <div class="news-item__info">
               <h3 class="news-item__title">Builder of human happiness for all time</h3>
               <time class="news-item__date" datetime="2018-12-12 18:00">12 december 2018</time>
@@ -355,7 +367,7 @@
           <ul class="recent-news__list">
             <li>
               <article class="recent-news__item">
-                <div class="recent-news__image"><img src="" alt=""></div>
+                <div class="recent-news__image"><img src="img/recent-news-1.jpg" alt=""></div>
                 <p class="recent-news__text">
                   A Clean Website Gives More Experience To The Visitors
                 </p>
@@ -364,7 +376,7 @@
             </li>
             <li>
               <article class="recent-news__item">
-                <div class="recent-news__image"><img src="" alt=""></div>
+                <div class="recent-news__image"><img src="img/recent-news-2.jpg" alt=""></div>
                 <p class="recent-news__text">A Clean Website Gives More Experience To The Visitors</p>
                 <time class="recent-news__date">Dec 12 - 2018</time>
               </article>

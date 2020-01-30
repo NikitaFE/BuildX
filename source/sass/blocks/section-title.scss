@@ -1,0 +1,6 @@
+.section-title {
+  @include montserrat-black(30px, 35px, $text-black);
+
+  margin: 0;
+  padding: 0;
+}

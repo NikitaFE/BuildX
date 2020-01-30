@@ -1,0 +1,19 @@
+.nav {
+  margin-bottom: 5px;
+}
+
+.nav__list {
+  @include reset-list;
+
+  li {
+    padding: 2px 5px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+
+.nav__link {
+  @include roboto-medium(14px, 24px, $text-black);
+}
