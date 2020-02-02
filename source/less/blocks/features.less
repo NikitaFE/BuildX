@@ -36,22 +36,24 @@
   padding: 0 20px;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .features__container {
     display: flex;
     max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .features__slide {
+    overflow: hidden;
+
+    img {
+      width: auto;
+    }
   }
 
   .features__slides,
   .features__info {
     width: 50%;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .features__container {
-    max-width: 1920px;
-    margin: 0 auto;
   }
 
   .features__button {
