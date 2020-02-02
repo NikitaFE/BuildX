@@ -1,0 +1,69 @@
+.features {
+  margin-bottom: 10px;
+
+  background-color: #f8f8f8;
+}
+
+.features__slides {
+  position: relative;
+}
+
+.features__slide {
+  &--hidden {
+    display: none;
+  }
+}
+
+.features__button {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+
+  width: 69px;
+  height: 69px;
+
+  background-image: url("../img/play-icon.png");
+  background-repeat: no-repeat;
+
+  transform: translate(50%, -50%);
+}
+
+.features__info {
+  padding: 20px 0;
+}
+
+.features__list {
+  .reset-list;
+
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .features__container {
+    display: flex;
+    max-width: 1920px;
+  }
+
+  .features__slides,
+  .features__info {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__container {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .features__button {
+    top: 611px;
+    right: 88px;
+
+    transform: translate(0, 0);
+  }
+
+  .features__list {
+    padding: 100px 107px 63px;
+  }
+}

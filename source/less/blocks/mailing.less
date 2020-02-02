@@ -1,0 +1,51 @@
+.mailing__text {
+  .roboto-regular(13px, 22px, #ffffff);
+
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  padding-left: 2px;
+  padding-right: 5px;
+}
+
+.mailing__form {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.mailing__field {
+  .roboto-regular(12px, 22px, @text-black);
+
+  width: 74%;
+  padding: 9px 20px 8px;
+
+  border: 0;
+
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-moz-placeholder,
+  &:-ms-input-placeholder {
+    .roboto-regular(12px, 22px, #969595);
+  }
+}
+
+.mailing__button {
+  width: 26%;
+  padding: 5px;
+
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.mailing__note {
+  .roboto-regular(12px, 22px, #919191);
+
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .mailing__title {
+    margin-bottom: 32px;
+  }
+}

@@ -7,7 +7,9 @@ var rename = require('gulp-rename');
 var server = require('browser-sync').create();
 var del = require('del');
 
-var sass = require('gulp-sass');
+// var sass = require('gulp-sass');
+var less = require('gulp-less');
+var path = require('path');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var csso = require('gulp-csso');
@@ -23,10 +25,10 @@ var uglify = require('gulp-uglify');
 
 
 gulp.task('css', function () {
-  return gulp.src('source/sass/style.scss')
+  return gulp.src('source/less/style.less')
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(less())
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -103,7 +105,7 @@ gulp.task('server', function () {
     ui: false
   });
 
-  gulp.watch('source/sass/**/*.scss', gulp.series('css', 'refresh'));
+  gulp.watch('source/less/**/*.less', gulp.series('css', 'refresh'));
   gulp.watch('source/img/svg/sp-*.svg', gulp.series('sprite', 'html', 'refresh'));
   gulp.watch('source/*.html', gulp.series('html', 'refresh'));
   gulp.watch('source/js/*.js', gulp.series('js', 'refresh'));

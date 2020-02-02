@@ -1,0 +1,115 @@
+.work {
+  border: 6px solid #ffffff;
+}
+
+.work__info {
+  padding: 15px 20px;
+
+  background-color: #fef6de;
+}
+
+.work__title {
+  .roboto-medium(18px, 24px, @text-black);
+
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  text-transform: uppercase;
+
+  &::before {
+    .pseudo;
+
+    bottom: -6px;
+    left: 0;
+
+    width: 58px;
+    height: 2px;
+
+    background-color: @text-darkgray;
+  }
+}
+
+.work__buttons {
+  .reset-list;
+
+  display: flex;
+
+  li {
+    &:nth-child(1) {
+      .work__button {
+        background-image: url("../img/plus-icon.png");
+      }
+    }
+
+    &:nth-child(2) {
+      .work__button {
+        background-image: url("../img/chain-icon.png");
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.work__button {
+  width: 47px;
+  height: 41px;
+
+  background-color: @orange;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: @tablet-width) {
+  .work {
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .work {
+    position: relative;
+
+    border-width: 1px;
+
+    &:hover {
+      border-width: 8px;
+      border-top-width: 5px;
+      border-bottom-width: 5px;
+
+      .work__info {
+        opacity: 1;
+      }
+    }
+  }
+
+  .work__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 37px 14px 34px 44px;
+
+    opacity: 0;
+  }
+
+  .work__title {
+    font-size: 24px;
+
+    &::before {
+      bottom: -15px;
+    }
+  }
+
+  .work__buttons {
+    margin-top: 3px;
+  }
+}
