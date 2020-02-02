@@ -1,0 +1,42 @@
+.button {
+  display: block;
+  padding: 0;
+
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+}
+
+.button--orange {
+  .roboto-regular(14px, 24px, #ffffff);
+
+  background-color: @orange;
+
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.button--white {
+  .roboto-regular(14px, 24px, @orange);
+
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

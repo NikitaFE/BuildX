@@ -1,0 +1,35 @@
+.social {
+  .reset-list;
+  display: flex;
+  padding: 10px 2px;
+
+  li {
+    &:nth-child(1) {
+      .social__link {
+        background-position-x: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      .social__link {
+        background-position-x: -36px;
+      }
+    }
+
+    &:nth-child(3) {
+      .social__link {
+        background-position-x: -75px;
+      }
+    }
+  }
+}
+
+.social__link {
+  display: block;
+  width: 19px;
+  height: 19px;
+  margin-right: 18px;
+
+  background-image: url("../img/social-icons.png");
+  background-repeat: no-repeat;
+}
