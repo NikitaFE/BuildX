@@ -47,9 +47,9 @@
   .service-card {
     &:hover {
       .service-card__image {
-        margin-bottom: 27px;
-
-        border: 6px solid #ffffff;
+        img {
+          transform: scale(0.967);
+        }
       }
 
       .service-card__title {
@@ -59,6 +59,10 @@
   }
 
   .service-card__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin-bottom: 31px;
   }
 
