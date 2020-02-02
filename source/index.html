@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BuildX</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="../package/css/swiper.min.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <span class="header__burger"></span>
           </button>
         </div>
-        <nav class="header__nav nav">
+        <nav class="header__nav nav nav--hidden">
           <ul class="nav__list">
             <li><a href="" class="nav__link nav__link--active">About</a></li>
             <li><a href="" class="nav__link">Features</a></li>
@@ -34,7 +34,7 @@
             <li class="nav__search-wrapper">
               <button type="button" class="nav__link nav__button button"><span
                   class="visually-hidden">Search</span></button>
-              <form action="" class="nav__search nav__search--hidden"><input type="text" class="nav__search-field"
+              <form action="post" class="nav__search nav__search--hidden"><input type="text" class="nav__search-field"
                   placeholder="Your text"><button class="nav__search-button button button--orange"
                   type="submit">Search</button class="nav__search"></form>
             </li>
@@ -42,7 +42,7 @@
         </nav>
       </div>
     </div>
-    <div class="header__contacts">
+    <div class="header__contacts header__contacts--hidden">
       <div class="header__contacts-container container">
         <p class="header__contacts-text">Have any question?</p>
         <ul class="header__contacts-info">
@@ -123,10 +123,10 @@
 
       <div class="features__container">
         <div class="features__slides">
-          <img class="features__slide" src="img/slide-1.jpg" alt="">
-          <img class="features__slide features__slide--hidden" src="img/slide-2.jpg" alt="">
-          <img class="features__slide features__slide--hidden" src="img/slide-3.jpg" alt="">
-          <button class="features__button button"></button>
+          <div class="features__slide">
+            <img src="img/slide-1.jpg" alt="">
+            <button class="features__button button"></button>
+          </div>
         </div>
         <div class="features__info">
           <ul class="features__list">
@@ -162,7 +162,7 @@
         <nav class="works__nav">
           <ul class="works__links">
             <li><a href="" class="works__link">All</a></li>
-            <li><a href="" class="works__link">Green Building</a></li>
+            <li><a href="" class="works__link works__link--active">Green Building</a></li>
             <li><a href="" class="works__link">Healthcare</a></li>
             <li><a href="" class="works__link">Interior Design</a></li>
             <li><a href="" class="works__link">Office</a></li>
@@ -240,9 +240,9 @@
         <p class="feedback__text">Lorem ipsum dolor sit amet, sed dicunt oporteat cu, laboramus definiebas cum et. Duo
           id omnis persequeris neglegentur, facete commodo ea usu, possit lucilius sed ei. Esse efficiendi scripserit
           eos ex. Sea utamur iisque salutatus id.Mel autem animal.</p>
-        <div class="feedback__carusel">
-          <ul class="feedback__items">
-            <li class="feedback__item feedback-item">
+        <div class="feedback__carusel swiper-container">
+          <ul class="feedback__items swiper-wrapper">
+            <li class="feedback__item feedback-item swiper-slide">
               <div class="feedback-item__photo"><img src="img/costomer-1.jpg" width="136" height="171" alt=""></div>
               <div class="feedback-item__info">
                 <p class="feedback-item__text">
@@ -252,7 +252,7 @@
                 <span class="feedback-item__author">HouseBuilders - CEO</span>
               </div>
             </li>
-            <li class="feedback__item feedback-item">
+            <li class="feedback__item feedback-item swiper-slide">
               <div class="feedback-item__photo"><img src="img/costomer-2.jpg" width="136" height="171" alt=""></div>
               <div class="feedback-item__info">
                 <p class="feedback-item__text">
@@ -262,7 +262,7 @@
                 <span class="feedback-item__author">HouseBuilders - CEO</span>
               </div>
             </li>
-            <li class="feedback__item feedback-item">
+            <li class="feedback__item feedback-item swiper-slide">
               <div class="feedback-item__photo"><img src="img/costomer-3.jpg" width="136" height="171" alt=""></div>
               <div class="feedback-item__info">
                 <p class="feedback-item__text">
@@ -272,12 +272,18 @@
                 <span class="feedback-item__author">HouseBuilders - CEO</span>
               </div>
             </li>
+            <li class="feedback__item feedback-item swiper-slide">
+              <div class="feedback-item__photo"><img src="img/costomer-1.jpg" width="136" height="171" alt=""></div>
+              <div class="feedback-item__info">
+                <p class="feedback-item__text">
+                  I've been happy with the services provided by Construction LLC. Scooter Libby has been wonderful! He
+                  has returned my calls quickly, and he answered all my questions.
+                </p>
+                <span class="feedback-item__author">HouseBuilders - CEO</span>
+              </div>
+            </li>
           </ul>
-          <ul class="feedback__carusel-controls">
-            <li><button type="button" class="feedback__control button feedback__control--active"></button></li>
-            <li><button type="button" class="feedback__control button"></button></li>
-            <li><button type="button" class="feedback__control button"></button></li>
-          </ul>
+          <div class="feedback__carusel-controls swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -497,7 +503,9 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="../package/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

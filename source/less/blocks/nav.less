@@ -1,5 +1,9 @@
 .nav {
   margin-bottom: 5px;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -45,6 +49,10 @@
 .nav__search {
   display: flex;
   padding: 0 10px;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .nav__search-field {
@@ -80,6 +88,10 @@
 @media (min-width: @tablet-width) {
   .nav {
     margin-bottom: 0;
+
+    &--hidden {
+      display: block;
+    }
   }
 
   .nav__list {

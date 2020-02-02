@@ -84,6 +84,17 @@
 @media (min-width: @desktop-width) {
   .footer {
     padding-top: 72px;
+
+    a {
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.4;
+      }
+    }
   }
 
   .footer__blocks {
