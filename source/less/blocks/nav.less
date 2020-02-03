@@ -26,6 +26,8 @@
 .nav__link {
   .roboto-regular(14px, 24px, @text-black);
 
+  transition: 0.2s;
+
   &--active {
     font-weight: 500;
     color: @orange;
@@ -33,11 +35,11 @@
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    opacity: 0.7;
   }
 
   &:active {
-    opacity: 0.7;
+    opacity: 0.4;
   }
 }
 
@@ -86,6 +88,7 @@
 
   &:hover {
     cursor: pointer;
+    opacity: 0.7;
   }
 }
 
